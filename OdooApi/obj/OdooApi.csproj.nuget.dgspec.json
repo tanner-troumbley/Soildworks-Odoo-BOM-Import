@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\OdooApi\\OdooApi.csproj": {}
+    "C:\\Users\\tanne\\code\\Soildworks-Odoo-API\\OdooApi\\OdooApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\OdooApi\\OdooApi.csproj": {
+    "C:\\Users\\tanne\\code\\Soildworks-Odoo-API\\OdooApi\\OdooApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\OdooApi\\OdooApi.csproj",
+        "projectUniqueName": "C:\\Users\\tanne\\code\\Soildworks-Odoo-API\\OdooApi\\OdooApi.csproj",
         "projectName": "OdooApi",
-        "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\OdooApi\\OdooApi.csproj",
-        "packagesPath": "C:\\Users\\tanner.troumbley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\OdooApi\\obj\\",
+        "projectPath": "C:\\Users\\tanne\\code\\Soildworks-Odoo-API\\OdooApi\\OdooApi.csproj",
+        "packagesPath": "C:\\Users\\tanne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tanne\\code\\Soildworks-Odoo-API\\OdooApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tanner.troumbley\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tanne\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

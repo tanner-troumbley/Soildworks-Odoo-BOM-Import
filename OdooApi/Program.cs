@@ -1,6 +1,5 @@
 
 using OdooApi;
-using System.Text.Json;
 
 namespace SolidworksUpload
 {
@@ -28,12 +27,12 @@ namespace SolidworksUpload
             {
                 Console.WriteLine($"Authentication Error. {ex}");
             }
+
             var partners = await client.SearchReadAsync("res.partner", [], ["name"], 5);
             Console.WriteLine(partners); 
-            for (int i = 0; i < partners.GetArrayLength(); i++)
-            {
-                Console.WriteLine(partners[i].GetProperty("name").GetString());            
-            }
+            
+            var products =  await client.SearchReadAsync("product.product", [], ["default_code"], 5);
+            Console.WriteLine(products);
         }
     }
 }
