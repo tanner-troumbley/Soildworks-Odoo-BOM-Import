@@ -1,0 +1,1242 @@
+{
+  "AssemblyName": "A000268.sldasm",
+  "AssemblyPath": "C:\\EPSVAULT\\Archive\\A000268.sldasm",
+  "Parts": [
+    {
+      "FileName": "P000965.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000965.sldprt",
+      "Properties": [
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000965",
+          "RawValue": "P000965",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000965",
+          "RawValue": "P000965",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Description",
+          "Value": "CONTROL BOX PLACEHOLDER",
+          "RawValue": "CONTROL BOX PLACEHOLDER",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "Default"
+        }
+      ]
+    },
+    {
+      "FileName": "P000964.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000964.sldprt",
+      "Properties": [
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000964",
+          "RawValue": "P000964",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000964",
+          "RawValue": "P000964",
+          "Scope": "Default"
+        },
+        {
+          "Name": "Description",
+          "Value": "LIGHT CURTAIN PLACEHOLDER",
+          "RawValue": "LIGHT CURTAIN PLACEHOLDER",
+          "Scope": "Default"
+        }
+      ]
+    },
+    {
+      "FileName": "P000963.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000963.sldprt",
+      "Properties": [
+        {
+          "Name": "Desc1",
+          "Value": "Extended 90\u00B0 Bracket for",
+          "RawValue": "Extended 90\u00B0 Bracket for",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc2",
+          "Value": "Aluminum T-Slotted Framing",
+          "RawValue": "Aluminum T-Slotted Framing",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc3",
+          "Value": "\u00A9 2015 McMaster-Carr Supply Company",
+          "RawValue": "\u00A9 2015 McMaster-Carr Supply Company",
+          "Scope": "General"
+        },
+        {
+          "Name": "UNIT_OF_MEASURE",
+          "Value": " - none -",
+          "RawValue": " - none -",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000963",
+          "RawValue": "P000963",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "For Extrusion Ht.",
+          "Value": "1.5",
+          "RawValue": "1.5",
+          "Scope": "47065T241"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "47065T241"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000963",
+          "RawValue": "P000963",
+          "Scope": "47065T241"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "47065T241"
+        },
+        {
+          "Name": "Description",
+          "Value": "SILVER CORNER BRACKET, 3\u0022 FOR 1 1/2\u0022 T-SLOTTED FRAMING",
+          "RawValue": "SILVER CORNER BRACKET, 3\u0022 FOR 1 1/2\u0022 T-SLOTTED FRAMING",
+          "Scope": "47065T241"
+        }
+      ]
+    },
+    {
+      "FileName": "P000967.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000967.sldprt",
+      "Properties": [
+        {
+          "Name": "Desc1",
+          "Value": "Aluminum",
+          "RawValue": "Aluminum",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc2",
+          "Value": "T-Slotted Framing",
+          "RawValue": "T-Slotted Framing",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc3",
+          "Value": "\u00A9 2015 McMaster-Carr Supply Company",
+          "RawValue": "\u00A9 2015 McMaster-Carr Supply Company",
+          "Scope": "General"
+        },
+        {
+          "Name": "UNIT_OF_MEASURE",
+          "Value": " - none -",
+          "RawValue": " - none -",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000967",
+          "RawValue": "P000967",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "Attribute Master",
+          "Value": "47065T102",
+          "RawValue": "47065T102",
+          "Scope": "47065T148"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "47065T148"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000967",
+          "RawValue": "P000967",
+          "Scope": "47065T148"
+        },
+        {
+          "Name": "Description",
+          "Value": "SHORT SIDE OF PRE-FAB MESH WALL",
+          "RawValue": "SHORT SIDE OF PRE-FAB MESH WALL",
+          "Scope": "47065T148"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "47065T148"
+        }
+      ]
+    },
+    {
+      "FileName": "P000961.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000961.sldprt",
+      "Properties": [
+        {
+          "Name": "Desc1",
+          "Value": "Aluminum",
+          "RawValue": "Aluminum",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc2",
+          "Value": "T-Slotted Framing",
+          "RawValue": "T-Slotted Framing",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc3",
+          "Value": "\u00A9 2015 McMaster-Carr Supply Company",
+          "RawValue": "\u00A9 2015 McMaster-Carr Supply Company",
+          "Scope": "General"
+        },
+        {
+          "Name": "UNIT_OF_MEASURE",
+          "Value": " - none -",
+          "RawValue": " - none -",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Description",
+          "Value": "T-Slotted\u00A0Framing Single\u00A0Rail,\u00A0Silver,\u00A01-1/2\u0022\u00A0High x\u00A01-1/2\u0022\u00A0Wide,\u00A0Hollow,\u00A0(cut to length 30.5 in.)",
+          "RawValue": "T-Slotted\u00A0Framing Single\u00A0Rail,\u00A0Silver,\u00A01-1/2\u0022\u00A0High x\u00A01-1/2\u0022\u00A0Wide,\u00A0Hollow,\u00A0(cut to length 30.5 in.)",
+          "Scope": "General"
+        },
+        {
+          "Name": "Cost",
+          "Value": "20.30",
+          "RawValue": "20.30",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "Dan Lane",
+          "RawValue": "Dan Lane",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000961",
+          "RawValue": "P000961",
+          "Scope": "General"
+        },
+        {
+          "Name": "Manufacturer",
+          "Value": "Mcmaster Carr",
+          "RawValue": "Mcmaster Carr",
+          "Scope": "General"
+        },
+        {
+          "Name": "Attribute Master",
+          "Value": "47065T102",
+          "RawValue": "47065T102",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "Dan Lane",
+          "RawValue": "Dan Lane",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000961",
+          "RawValue": "P000961",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Description",
+          "Value": "T-SLOTTED FRAMING EXTRUSION, CUT TO 30.5",
+          "RawValue": "T-SLOTTED FRAMING EXTRUSION, CUT TO 30.5",
+          "Scope": "47065T602"
+        }
+      ]
+    },
+    {
+      "FileName": "P000962.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000962.sldprt",
+      "Properties": [
+        {
+          "Name": "Desc1",
+          "Value": "Aluminum",
+          "RawValue": "Aluminum",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc2",
+          "Value": "T-Slotted Framing",
+          "RawValue": "T-Slotted Framing",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc3",
+          "Value": "\u00A9 2015 McMaster-Carr Supply Company",
+          "RawValue": "\u00A9 2015 McMaster-Carr Supply Company",
+          "Scope": "General"
+        },
+        {
+          "Name": "UNIT_OF_MEASURE",
+          "Value": " - none -",
+          "RawValue": " - none -",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000962",
+          "RawValue": "P000962",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "Attribute Master",
+          "Value": "47065T102",
+          "RawValue": "47065T102",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Description",
+          "Value": "T-SLOTTED FRAMING EXTRUSION 3\u0027",
+          "RawValue": "T-SLOTTED FRAMING EXTRUSION 3\u0027",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000962",
+          "RawValue": "P000962",
+          "Scope": "47065T602"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "47065T602"
+        }
+      ]
+    },
+    {
+      "FileName": "P000966.sldprt",
+      "FilePath": "C:\\EPSVAULT\\Archive\\P000966.sldprt",
+      "Properties": [
+        {
+          "Name": "Desc1",
+          "Value": "Aluminum",
+          "RawValue": "Aluminum",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc2",
+          "Value": "T-Slotted Framing",
+          "RawValue": "T-Slotted Framing",
+          "Scope": "General"
+        },
+        {
+          "Name": "Desc3",
+          "Value": "\u00A9 2015 McMaster-Carr Supply Company",
+          "RawValue": "\u00A9 2015 McMaster-Carr Supply Company",
+          "Scope": "General"
+        },
+        {
+          "Name": "UNIT_OF_MEASURE",
+          "Value": " - none -",
+          "RawValue": " - none -",
+          "Scope": "General"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "General"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000966",
+          "RawValue": "P000966",
+          "Scope": "General"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "General"
+        },
+        {
+          "Name": "Attribute Master",
+          "Value": "47065T102",
+          "RawValue": "47065T102",
+          "Scope": "47065T146"
+        },
+        {
+          "Name": "Revision",
+          "Value": "A",
+          "RawValue": "A",
+          "Scope": "47065T146"
+        },
+        {
+          "Name": "Description",
+          "Value": "LONG SIDE OF PRE-FAB MESH WALL",
+          "RawValue": "LONG SIDE OF PRE-FAB MESH WALL",
+          "Scope": "47065T146"
+        },
+        {
+          "Name": "Number",
+          "Value": "P000966",
+          "RawValue": "P000966",
+          "Scope": "47065T146"
+        },
+        {
+          "Name": "Responsible Engineer",
+          "Value": "DAN LANE",
+          "RawValue": "DAN LANE",
+          "Scope": "47065T146"
+        }
+      ]
+    }
+  ],
+  "SubAssemblies": [
+    {
+      "AssemblyName": "WELD ASSEMBLY, ROBOTIC.SLDASM",
+      "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\WELD ASSEMBLY, ROBOTIC.SLDASM",
+      "Parts": [
+        {
+          "FileName": "8492A155_PRESS-FIT DRILL BUSHING WITH HEAD (1).SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\8492A155_PRESS-FIT DRILL BUSHING WITH HEAD (1).SLDPRT",
+          "Properties": [
+            {
+              "Name": "Desc1",
+              "Value": "Press-Fit Drill",
+              "RawValue": "Press-Fit Drill",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc2",
+              "Value": "Bushing with Head",
+              "RawValue": "Bushing with Head",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc3",
+              "Value": "\u00A9 2016 McMaster-Carr Supply Company\r\n",
+              "RawValue": "\u00A9 2016 McMaster-Carr Supply Company\r\n",
+              "Scope": "General"
+            },
+            {
+              "Name": "UNIT_OF_MEASURE",
+              "Value": " - none -",
+              "RawValue": " - none -",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "BUSHING, LOCATION",
+              "RawValue": "BUSHING, LOCATION",
+              "Scope": "General"
+            },
+            {
+              "Name": "ID Tolerance",
+              "Value": "\u002B0.0001\r\n\u002B0.0005",
+              "RawValue": "\u002B0.0001\r\n\u002B0.0005",
+              "Scope": "8492A155"
+            },
+            {
+              "Name": "OD Tolerance",
+              "Value": "\u002B0.0014\r\n\u002B0.0017",
+              "RawValue": "\u002B0.0014\r\n\u002B0.0017",
+              "Scope": "8492A155"
+            },
+            {
+              "Name": "Drill Size",
+              "Value": "F",
+              "RawValue": "F",
+              "Scope": "8492A155"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "8492A155"
+            }
+          ]
+        },
+        {
+          "FileName": "Robotic Table Base.SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\Robotic Table Base.SLDPRT",
+          "Properties": [
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "TABLE BASE, ROBOTIC",
+              "RawValue": "TABLE BASE, ROBOTIC",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "Default"
+            }
+          ]
+        },
+        {
+          "FileName": "6311K260_AIR SLIDE (1).SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\6311K260_AIR SLIDE (1).SLDPRT",
+          "Properties": [
+            {
+              "Name": "Desc1",
+              "Value": "Air",
+              "RawValue": "Air",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc2",
+              "Value": "Slide",
+              "RawValue": "Slide",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc3",
+              "Value": "\u00A9 2015 McMaster-Carr Supply Company\r\n",
+              "RawValue": "\u00A9 2015 McMaster-Carr Supply Company\r\n",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "SLIDE ASSEMBLY, AIR",
+              "RawValue": "SLIDE ASSEMBLY, AIR",
+              "Scope": "General"
+            },
+            {
+              "Name": "Attribute Master",
+              "Value": "6311K54",
+              "RawValue": "6311K54",
+              "Scope": "6311K26"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "6311K26"
+            }
+          ]
+        },
+        {
+          "FileName": "BLOCK, CLAMP.SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\BLOCK, CLAMP.SLDPRT",
+          "Properties": [
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "BLOCK, CLAMP",
+              "RawValue": "BLOCK, CLAMP",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "Default"
+            }
+          ]
+        },
+        {
+          "FileName": "8487A350_STEEL RETRACTABLE SPRING PLUNGER W PULL RING (1).SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\8487A350_STEEL RETRACTABLE SPRING PLUNGER W PULL RING (1).SLDPRT",
+          "Properties": [
+            {
+              "Name": "Desc1",
+              "Value": "Retractable",
+              "RawValue": "Retractable",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc2",
+              "Value": "Spring Plunger without Locking Nose",
+              "RawValue": "Spring Plunger without Locking Nose",
+              "Scope": "General"
+            },
+            {
+              "Name": "Desc3",
+              "Value": "\u00A9 2012 McMaster-Carr Supply Company\r\n",
+              "RawValue": "\u00A9 2012 McMaster-Carr Supply Company\r\n",
+              "Scope": "General"
+            },
+            {
+              "Name": "UNIT_OF_MEASURE",
+              "Value": " - none -",
+              "RawValue": " - none -",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "PLUNGER, SPRING",
+              "RawValue": "PLUNGER, SPRING",
+              "Scope": "General"
+            },
+            {
+              "Name": "Thread",
+              "Value": "3/8\u0022-16",
+              "RawValue": "3/8\u0022-16",
+              "Scope": "8487A35"
+            },
+            {
+              "Name": "UNIT_OF_MEASURE",
+              "Value": " - none -",
+              "RawValue": " - none -",
+              "Scope": "8487A35"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "8487A35"
+            }
+          ]
+        },
+        {
+          "FileName": "FRAME STAND.SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FRAME STAND.SLDPRT",
+          "Properties": [
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "STAND, ROBOTIC TABLE",
+              "RawValue": "STAND, ROBOTIC TABLE",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "Default\u003CAs Machined\u003E"
+            }
+          ]
+        },
+        {
+          "FileName": "BLOCK MOUNT, CLAMP.SLDPRT",
+          "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\BLOCK MOUNT, CLAMP.SLDPRT",
+          "Properties": [
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "General"
+            },
+            {
+              "Name": "Description",
+              "Value": "BLOCK MOUNT, CLAMP",
+              "RawValue": "BLOCK MOUNT, CLAMP",
+              "Scope": "General"
+            },
+            {
+              "Name": "Revision",
+              "Value": "A",
+              "RawValue": "A",
+              "Scope": "Default"
+            }
+          ]
+        }
+      ],
+      "SubAssemblies": [
+        {
+          "AssemblyName": "LR Mate 200iD 7L.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L.SLDASM",
+          "Parts": [
+            {
+              "FileName": "LR Mate 200iD 7L axis 1.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 1.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L axis 5.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 5.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L base.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L base.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L axis 2.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 2.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L axis 3.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 3.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L J6RB cover.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L J6RB cover.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L axis 4.sldprt",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 4.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "LR Mate 200iD 7L axis 6.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L axis 6.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Status",
+                  "Value": "2006",
+                  "RawValue": "2006",
+                  "Scope": "General"
+                }
+              ]
+            }
+          ],
+          "SubAssemblies": []
+        },
+        {
+          "AssemblyName": "FIXTURE ASSEMBLY, WELDING.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE ASSEMBLY, WELDING.SLDASM",
+          "Parts": [
+            {
+              "FileName": "FIXTURE BASE MOUNT ANGLES.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE BASE MOUNT ANGLES.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "MOUNT ANGLE, FIXTURE",
+                  "RawValue": "MOUNT ANGLE, FIXTURE",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "FIXTURE BASE.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE BASE.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "BASE, FIXTURE",
+                  "RawValue": "BASE, FIXTURE",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "FIXTURE FENCE, SHORT.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE FENCE, SHORT.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "FIXTURE FENCE, SHORT",
+                  "RawValue": "FIXTURE FENCE, SHORT",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "Part1^FIXTURE ASSEMBLY, WELDING.sldprt",
+              "FilePath": "C:\\Users\\tanner.troumbley\\AppData\\Local\\Temp\\swx20432\\VC~~\\FIXTURE ASSEMBLY, WELDING\\Part1^FIXTURE ASSEMBLY, WELDING.sldprt",
+              "Properties": []
+            },
+            {
+              "FileName": "FIXTURE FENCE, LONG.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE FENCE, LONG.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "FIXTURE FENCE, LONG",
+                  "RawValue": "FIXTURE FENCE, LONG",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            }
+          ],
+          "SubAssemblies": []
+        },
+        {
+          "AssemblyName": "WELD HEAD ASSEMBLY, CD.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\WELD HEAD ASSEMBLY, CD.SLDASM",
+          "Parts": [
+            {
+              "FileName": "91375A596_ALLOY STEEL CUP POINT SET SCREW (1).SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\91375A596_ALLOY STEEL CUP POINT SET SCREW (1).SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Desc1",
+                  "Value": "Cup Point",
+                  "RawValue": "Cup Point",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc2",
+                  "Value": "Set Screw",
+                  "RawValue": "Set Screw",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc3",
+                  "Value": "\u00A9 2013 McMaster-Carr Supply Company",
+                  "RawValue": "\u00A9 2013 McMaster-Carr Supply Company",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "UNIT_OF_MEASURE",
+                  "Value": " - none -",
+                  "RawValue": " - none -",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "SCREW, SET",
+                  "RawValue": "SCREW, SET",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Thread",
+                  "Value": "5/16\u0022-24",
+                  "RawValue": "5/16\u0022-24",
+                  "Scope": "91375A596"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "91375A596"
+                }
+              ]
+            },
+            {
+              "FileName": "ELECTRODE, COPPER.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\ELECTRODE, COPPER.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "ELECTRODE, COPPER",
+                  "RawValue": "ELECTRODE, COPPER",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "GUIDE RAIL, WELD.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\GUIDE RAIL, WELD.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "GUIDE RAIL, WELD",
+                  "RawValue": "GUIDE RAIL, WELD",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "91375A440_ALLOY STEEL CUP POINT SET SCREW (1).SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\91375A440_ALLOY STEEL CUP POINT SET SCREW (1).SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Desc1",
+                  "Value": "Cup Point",
+                  "RawValue": "Cup Point",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc2",
+                  "Value": "Set Screw",
+                  "RawValue": "Set Screw",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc3",
+                  "Value": "\u00A9 2013 McMaster-Carr Supply Company",
+                  "RawValue": "\u00A9 2013 McMaster-Carr Supply Company",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "UNIT_OF_MEASURE",
+                  "Value": " - none -",
+                  "RawValue": " - none -",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "SET SCREW, 10-32X.375",
+                  "RawValue": "SET SCREW, 10-32X.375",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Thread",
+                  "Value": "#10-32",
+                  "RawValue": "#10-32",
+                  "Scope": "91375A440"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "91375A440"
+                }
+              ]
+            },
+            {
+              "FileName": "GUIDE, SPRING.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\GUIDE, SPRING.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "GUIDE, SPRING",
+                  "RawValue": "GUIDE, SPRING",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            },
+            {
+              "FileName": "2022N134_MIL. SPEC. COMPRESSION SPRING.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\2022N134_MIL. SPEC. COMPRESSION SPRING.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Desc1",
+                  "Value": "Mil. Spec.",
+                  "RawValue": "Mil. Spec.",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc2",
+                  "Value": "Compression Spring",
+                  "RawValue": "Compression Spring",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Desc3",
+                  "Value": "\u00A9 2018 McMaster-Carr Supply Company",
+                  "RawValue": "\u00A9 2018 McMaster-Carr Supply Company",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "CAD Model Disclaimer and Use Terms",
+                  "Value": "The 3-D CAD models and related information are provided for reference only.  Your use of the CAD models is at your own risk and McMaster-Carr shall have no liability for such use.  McMaster-Carr makes no representation or warranty (express or implied) with respect to the CAD Models.  In addition, by downloading and/or using the CAD models, you agree to McMaster-Carr\u2019s Terms and Conditions of Use and Sale, available at our website as follows: https://www.mcmaster.com/#termsandconditions",
+                  "RawValue": "The 3-D CAD models and related information are provided for reference only.  Your use of the CAD models is at your own risk and McMaster-Carr shall have no liability for such use.  McMaster-Carr makes no representation or warranty (express or implied) with respect to the CAD Models.  In addition, by downloading and/or using the CAD models, you agree to McMaster-Carr\u2019s Terms and Conditions of Use and Sale, available at our website as follows: https://www.mcmaster.com/#termsandconditions",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "SPRING, COMPRESSION",
+                  "RawValue": "SPRING, COMPRESSION",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Compressed Length",
+                  "Value": "0.37",
+                  "RawValue": "0.37",
+                  "Scope": "2022N134"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "2022N134"
+                }
+              ]
+            },
+            {
+              "FileName": "ASSEMBLY ARM, WELD.SLDPRT",
+              "FilePath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\ASSEMBLY ARM, WELD.SLDPRT",
+              "Properties": [
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Description",
+                  "Value": "ASSEMBLY ARM, WELD",
+                  "RawValue": "ASSEMBLY ARM, WELD",
+                  "Scope": "General"
+                },
+                {
+                  "Name": "Revision",
+                  "Value": "A",
+                  "RawValue": "A",
+                  "Scope": "Default"
+                }
+              ]
+            }
+          ],
+          "SubAssemblies": []
+        }
+      ]
+    },
+    {
+      "AssemblyName": "WELD ASSEMBLY, ROBOTIC.SLDASM",
+      "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\WELD ASSEMBLY, ROBOTIC.SLDASM",
+      "Parts": [],
+      "SubAssemblies": [
+        {
+          "AssemblyName": "LR Mate 200iD 7L.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\LR Mate 200iD 7L.SLDASM",
+          "Parts": [],
+          "SubAssemblies": []
+        },
+        {
+          "AssemblyName": "FIXTURE ASSEMBLY, WELDING.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\FIXTURE ASSEMBLY, WELDING.SLDASM",
+          "Parts": [],
+          "SubAssemblies": []
+        },
+        {
+          "AssemblyName": "WELD HEAD ASSEMBLY, CD.SLDASM",
+          "AssemblyPath": "C:\\EPSVAULT\\Manufacturing Engineering\\FANUC-AMERICA BOT\\WELD HEAD ASSEMBLY, CD.SLDASM",
+          "Parts": [],
+          "SubAssemblies": []
+        }
+      ]
+    }
+  ]
+}

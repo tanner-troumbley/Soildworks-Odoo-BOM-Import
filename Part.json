@@ -1,0 +1,216 @@
+{
+  "FileName": "P009457.SLDPRT",
+  "FilePath": "C:\\EPSDev3\\Programs\\0000 - Pursuits\\PDM Test Folder\\P009457.SLDPRT",
+  "Properties": [
+    {
+      "Name": "Material",
+      "Value": "",
+      "RawValue": "",
+      "Scope": "General"
+    },
+    {
+      "Name": "Weight",
+      "Value": "16.045",
+      "RawValue": "\u0022SW-Mass@P009457.SLDPRT\u0022",
+      "Scope": "General"
+    },
+    {
+      "Name": "Volume",
+      "Value": "0.979",
+      "RawValue": "\u0022SW-Volume@P009457.SLDPRT\u0022",
+      "Scope": "General"
+    },
+    {
+      "Name": "Tolerance 3",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Unedited",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "ECO",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Blue Label",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Number",
+      "Value": "P009457",
+      "RawValue": "P009457",
+      "Scope": "General"
+    },
+    {
+      "Name": "Tolerance 5",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Revision",
+      "Value": "*1\u002B",
+      "RawValue": "*1\u002B",
+      "Scope": "General"
+    },
+    {
+      "Name": "Tolerance 2",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Fab location",
+      "Value": "External",
+      "RawValue": "External",
+      "Scope": "General"
+    },
+    {
+      "Name": "Tolerance 1",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Tolerance 4",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Project Number",
+      "Value": "0000",
+      "RawValue": "0000",
+      "Scope": "General"
+    },
+    {
+      "Name": "Description",
+      "Value": "PDM PURSUIT FOLDER TEST FILE",
+      "RawValue": "PDM PURSUIT FOLDER TEST FILE",
+      "Scope": "General"
+    },
+    {
+      "Name": "Responsible Engineer",
+      "Value": "SR",
+      "RawValue": "SR",
+      "Scope": "General"
+    },
+    {
+      "Name": "White Inspection",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "General"
+    },
+    {
+      "Name": "Watermark",
+      "Value": "WORK IN PROCESS",
+      "RawValue": "WORK IN PROCESS",
+      "Scope": "General"
+    },
+    {
+      "Name": "Weight",
+      "Value": "16.045",
+      "RawValue": "\u0022SW-Mass@@Default@P009457.SLDPRT\u0022",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Tolerance 3",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Unedited",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "ECO",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Blue Label",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Number",
+      "Value": "P009457",
+      "RawValue": "P009457",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Tolerance 5",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Revision",
+      "Value": "*1\u002B",
+      "RawValue": "*1\u002B",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Tolerance 2",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Fab location",
+      "Value": "External",
+      "RawValue": "External",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Tolerance 1",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Tolerance 4",
+      "Value": "0",
+      "RawValue": "0",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Project Number",
+      "Value": "0000",
+      "RawValue": "0000",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Description",
+      "Value": "PDM PURSUIT FOLDER TEST FILE",
+      "RawValue": "PDM PURSUIT FOLDER TEST FILE",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Responsible Engineer",
+      "Value": "SR",
+      "RawValue": "SR",
+      "Scope": "Default"
+    },
+    {
+      "Name": "Watermark",
+      "Value": "WORK IN PROCESS",
+      "RawValue": "WORK IN PROCESS",
+      "Scope": "Default"
+    }
+  ]
+}

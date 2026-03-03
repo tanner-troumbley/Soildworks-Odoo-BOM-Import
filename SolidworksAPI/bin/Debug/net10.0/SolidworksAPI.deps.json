@@ -1,0 +1,91 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SolidworksAPI/1.0.0": {
+        "dependencies": {
+          "BlueByte.SOLIDWORKS.SDK": "2021.0.55"
+        },
+        "runtime": {
+          "SolidworksAPI.dll": {}
+        }
+      },
+      "BlueByte.SOLIDWORKS.Interops/2021.3.0": {
+        "runtime": {
+          "lib/SolidWorks.Interop.sldworks.dll": {
+            "assemblyVersion": "29.1.0.61",
+            "fileVersion": "29.1.0.61"
+          },
+          "lib/SolidWorks.Interop.swcommands.dll": {
+            "assemblyVersion": "29.1.0.61",
+            "fileVersion": "29.1.0.61"
+          },
+          "lib/SolidWorks.Interop.swconst.dll": {
+            "assemblyVersion": "29.1.0.61",
+            "fileVersion": "29.1.0.61"
+          },
+          "lib/SolidWorks.Interop.swpublished.dll": {
+            "assemblyVersion": "29.1.0.61",
+            "fileVersion": "29.1.0.61"
+          }
+        }
+      },
+      "BlueByte.SOLIDWORKS.SDK/2021.0.55": {
+        "dependencies": {
+          "BlueByte.SOLIDWORKS.Interops": "2021.3.0",
+          "SimpleInjector": "5.3.2"
+        },
+        "runtime": {
+          "lib/net46/BlueByte.SOLIDWORKS.SDK.Core.dll": {
+            "assemblyVersion": "55.0.0.0",
+            "fileVersion": "55.0.0.0"
+          },
+          "lib/net46/BlueByte.SOLIDWORKS.SDK.dll": {
+            "assemblyVersion": "2021.0.55.0",
+            "fileVersion": "2021.0.55.0"
+          }
+        }
+      },
+      "SimpleInjector/5.3.2": {
+        "runtime": {
+          "lib/netstandard2.1/SimpleInjector.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolidworksAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlueByte.SOLIDWORKS.Interops/2021.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EjBXNqeR2tC2KnVx1ucFq/gFOQ0x/2KyFAzBeOnk0zrIRqxRzNeEOHt9GNvOZkAlDW3Rl3CtPsbKavXsOPLQHw==",
+      "path": "bluebyte.solidworks.interops/2021.3.0",
+      "hashPath": "bluebyte.solidworks.interops.2021.3.0.nupkg.sha512"
+    },
+    "BlueByte.SOLIDWORKS.SDK/2021.0.55": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v/xEVQX+/xr6jvYlfbahI2uVIsCsMFoEufWqLgBEAt9Z6FFDEj3CxDSx00nZz8use3YlSztFgvlMwNxqbsHR/w==",
+      "path": "bluebyte.solidworks.sdk/2021.0.55",
+      "hashPath": "bluebyte.solidworks.sdk.2021.0.55.nupkg.sha512"
+    },
+    "SimpleInjector/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YNpunojK3+pK9S9D7sWpeR6me41StcurcMc9XB2UZE44cYUImXL6SKoxo2sffcq8YVou0/JX/Wjf2UuY1JcRyQ==",
+      "path": "simpleinjector/5.3.2",
+      "hashPath": "simpleinjector.5.3.2.nupkg.sha512"
+    }
+  }
+}
