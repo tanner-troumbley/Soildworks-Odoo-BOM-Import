@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="bom_importer_list">
+      <field name="name">bom_importer list</field>
+      <field name="model">bom.importer</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+      <record model="ir.ui.view" id="bom_importer_form">
+        <field name="name">bom_importer form</field>
+        <field name="model">bom.importer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                  <div class="oe_title">
+                    <h1>
+                      <field name="name" required="True"/>
+                    </h1>
+                  </div>                   
+                  <group>
+                    <field name="fields_id_domain" widget="domain" options="{'model', 'ir.model.fields'}"/>
+                    <field name="line_ids"/>
+                  </group>
+                </sheet>
+          </form>
+        </field>
+      </record>
+
+    <record model="ir.actions.act_window" id="bom_importer_action_window">
+      <field name="name">bom_importer window</field>
+      <field name="res_model">bom.importer</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="bom_importer" id="bom_importer.menu_root" parent="mrp.menu_mrp_configuration" sequence="110" action="bom_importer_action_window"/>
+  </data>
+</odoo>

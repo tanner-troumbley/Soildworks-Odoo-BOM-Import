@@ -17,7 +17,7 @@ public class SWOdooBomExport
         public int Quantity { get; set; }
         public bool IsAssembly { get; set; }
         public Dictionary<string, string> Properties { get; set; } = new Dictionary<string, string>();
-        public List<BomNode> Children { get; set; } = new List<BomNode>();
+        public List<BomNode> Components { get; set; } = new List<BomNode>();
     }
 
     class Program
@@ -128,7 +128,7 @@ public class SWOdooBomExport
                     foreach (var kvp in childMap)
                     {
                         BomNode? childNode = BuildBomTree(kvp.Value.comp, kvp.Value.qty);
-                        if (childNode != null) node.Children.Add(childNode);
+                        if (childNode != null) node.Components.Add(childNode);
                     }
                 }
             }
