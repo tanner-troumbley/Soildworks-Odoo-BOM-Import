@@ -60,6 +60,7 @@ public class SWOdooBomExport
                     WriteIndented = true
                 });
 
+                // Should be 15 Children for 1399
                 string outputPath = $"C:/Users/tanner.troumbley/PycharmProjects/Solidworks API/{Path.GetFileNameWithoutExtension(swModel.GetTitle())}-tree.json";
                 File.WriteAllText(outputPath, json);
                 Console.WriteLine($"BOM exported to: {outputPath}");    

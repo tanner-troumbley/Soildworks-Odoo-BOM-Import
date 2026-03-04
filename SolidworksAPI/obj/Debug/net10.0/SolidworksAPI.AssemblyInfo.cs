@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolidworksAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0dfac0c3d538b70da361d4e319b90d01f05e8e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b9289f6b88c5f3f7c86fb3bf5f73524859bbe2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolidworksAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolidworksAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
