@@ -7,7 +7,7 @@ using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swconst;
 using OdooApi;
 
-namespace SolidworksAPI;
+namespace SWOdooBomImport;
 
 public class SWOdooBomImport
 {
@@ -84,7 +84,14 @@ public class SWOdooBomImport
                     WriteIndented = true
                 });
 
-                await PostOdoo(json);
+                // await PostOdoo(json);
+                string exePath = System.Environment.ProcessPath ?? string.Empty;
+                string exeDirectory = Path.GetDirectoryName(exePath) ?? string.Empty;
+
+                
+                string outputPath = $"{exeDirectory}/test/{Path.GetFileNameWithoutExtension(swModel.GetTitle())}-tree.json";
+                File.WriteAllText(outputPath, json);
+                Console.WriteLine($"Saving file to {outputPath}");
             }
             catch (Exception ex)
             {
@@ -94,13 +101,7 @@ public class SWOdooBomImport
    
         static async Task PostOdoo(string bomJson)
         {
-            var SecureValues = new SecureCredentials(LocalCachePath);
-            string url = await SecureValues.CheckValue("Odoo_URL");
-            string dbName = await SecureValues.CheckValue("Odoo_DB");
-            string username = await SecureValues.CheckValue("Odoo_Username");
-            string password = await SecureValues.CheckValue("Odoo_Password");
-
-            var client = new OdooApiClient(url, dbName, username, password);
+            var client = new OdooApiClient();
             try
             {
                 await client.AuthenticateAsync();

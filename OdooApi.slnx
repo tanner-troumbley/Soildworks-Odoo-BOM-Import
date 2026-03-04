@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="OdooApi/OdooApi.csproj" />
-  <Project Path="SolidworksAPI/SolidworksAPI.csproj" />
+  <Project Path="SolidworksAPI/SWOdooBomImport.csproj" />
 </Solution>

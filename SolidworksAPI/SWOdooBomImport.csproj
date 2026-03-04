@@ -11,6 +11,8 @@
   <ItemGroup>
     <PackageReference Include="BlueByte.SOLIDWORKS.SDK" Version="2021.0.55" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.3" />
     <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.3" />
   </ItemGroup>
 

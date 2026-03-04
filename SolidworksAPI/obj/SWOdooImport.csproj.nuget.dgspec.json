@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj": {}
+    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooImport.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj": {
+    "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooImport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
-        "projectName": "SolidworksAPI",
-        "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+        "projectUniqueName": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooImport.csproj",
+        "projectName": "SWOdooImport",
+        "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooImport.csproj",
         "packagesPath": "C:\\Users\\tanner.troumbley\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\obj\\",
         "projectStyle": "PackageReference",

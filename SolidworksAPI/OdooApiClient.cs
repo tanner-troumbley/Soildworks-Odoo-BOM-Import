@@ -1,5 +1,8 @@
-﻿using System.Text;
+﻿using System;
+using System.Net.Http;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
 namespace OdooApi
@@ -13,7 +16,7 @@ namespace OdooApi
         private readonly HttpClient _httpClient;
         private int _uid;
 
-        public OdooApiClient(string url, string db, string username, string password)
+        public OdooApiClient()
         {
             var config = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", optional: false)

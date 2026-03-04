@@ -1,13 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "AAR3R9OLJ5I=",
+  "dgSpecHash": "WcaAh/hQ9VU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+  "projectFilePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooBomImport.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\bluebyte.solidworks.interops\\2021.3.0\\bluebyte.solidworks.interops.2021.3.0.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\bluebyte.solidworks.sdk\\2021.0.55\\bluebyte.solidworks.sdk.2021.0.55.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.3\\microsoft.extensions.configuration.10.0.3.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.3\\microsoft.extensions.configuration.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\10.0.3\\microsoft.extensions.configuration.environmentvariables.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.3\\microsoft.extensions.configuration.fileextensions.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.3\\microsoft.extensions.configuration.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.3\\microsoft.extensions.fileproviders.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.3\\microsoft.extensions.fileproviders.physical.10.0.3.nupkg.sha512",
+    "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.3\\microsoft.extensions.filesystemglobbing.10.0.3.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\simpleinjector\\5.3.2\\simpleinjector.5.3.2.nupkg.sha512",
     "C:\\Users\\tanner.troumbley\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.3\\system.security.cryptography.protecteddata.10.0.3.nupkg.sha512"
@@ -17,9 +23,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'BlueByte.SOLIDWORKS.Interops 2021.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+      "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooBomImport.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+      "filePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooBomImport.csproj",
       "libraryId": "BlueByte.SOLIDWORKS.Interops",
       "targetGraphs": [
         "net10.0"
@@ -29,9 +35,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'BlueByte.SOLIDWORKS.SDK 2021.0.55' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+      "projectPath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooBomImport.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SolidworksAPI.csproj",
+      "filePath": "C:\\Users\\tanner.troumbley\\PycharmProjects\\Solidworks API\\SolidworksAPI\\SWOdooBomImport.csproj",
       "libraryId": "BlueByte.SOLIDWORKS.SDK",
       "targetGraphs": [
         "net10.0"
