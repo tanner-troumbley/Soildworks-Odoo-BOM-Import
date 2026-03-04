@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace OdooApi
 {
@@ -14,11 +15,17 @@ namespace OdooApi
 
         public OdooApiClient(string url, string db, string username, string password)
         {
-            _url = url.TrimEnd('/') ?? "https://example.odoo.com/";
-            _db = db ?? "odoo-example-db";
-            _username = username ?? "admin";
-            _password = password ?? "admin";
+            var config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: false)
+            .AddEnvironmentVariables()
+            .Build();
+
+            _url = config["Odoo:URL"].TrimEnd('/');
+            _db = config["Odoo:DB"];
+            _username = config["Odoo:Username"];
+            _password = Environment.GetEnvironmentVariable("ODOO_API_KEY");
             _httpClient = new HttpClient();
+            Logger.Init();
         }
 
         /// <summary>
@@ -43,8 +50,11 @@ namespace OdooApi
             if (response.RootElement.TryGetProperty("result", out var result) && result.ValueKind == JsonValueKind.Number)
             {
                 _uid = result.GetInt32();
+                await Logger.ShutdownAsync(); // Gracefully stop logger
                 return _uid > 0;
             }
+            Logger.Error($"Odoo API Failed to Authenticate. Please Check Odoo Config.");
+            await Logger.ShutdownAsync(); // Gracefully stop logger
             return false;
         }
 
@@ -85,9 +95,9 @@ namespace OdooApi
         }
 
         /// <summary>
-        /// Internal method to call Odoo execute_kw.
+        /// method to call Odoo execute_kw. This can run functions on odoo models.
         /// </summary>
-        private async Task<JsonElement> ExecuteKwAsync(string model, string method, object[] args, object? kwargs = null)
+        public async Task<JsonElement> ExecuteKwAsync(string model, string method, object[] args, object? kwargs = null)
         {
             var payload = new
             {
@@ -113,8 +123,13 @@ namespace OdooApi
 
             var response = await PostAsync($"{_url}/jsonrpc", payload);
             if (response.RootElement.TryGetProperty("result", out var result))
+            {
+                await Logger.ShutdownAsync(); // Gracefully stop logger
                 return result;
-
+            }
+            
+            Logger.Error($"Odoo API call failed: {response}");
+            await Logger.ShutdownAsync(); // Gracefully stop logger
             throw new Exception("Odoo API call failed: " + response);
         }
 
@@ -127,6 +142,7 @@ namespace OdooApi
             var httpResponse = await _httpClient.PostAsync(endpoint, content);
             httpResponse.EnsureSuccessStatusCode();
             var json = await httpResponse.Content.ReadAsStringAsync();
+            await Logger.ShutdownAsync(); // Gracefully stop logger
             return JsonDocument.Parse(json);
         }
 

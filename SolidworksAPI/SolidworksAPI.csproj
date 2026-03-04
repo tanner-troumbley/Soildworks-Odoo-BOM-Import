@@ -5,10 +5,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>4a71b450-e131-4694-a453-f83a902d8ec4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BlueByte.SOLIDWORKS.SDK" Version="2021.0.55" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.3" />
   </ItemGroup>
 
 </Project>

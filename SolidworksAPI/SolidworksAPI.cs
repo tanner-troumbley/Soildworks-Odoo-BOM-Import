@@ -1,208 +1,191 @@
-﻿// using System;
-// using System.Collections.Generic;
-// using System.IO;
-// using System.Text.Json;
-// using System.Text.Json.Serialization;
-// using SolidWorks.Interop.sldworks;
-// using SolidWorks.Interop.swconst;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using SolidWorks.Interop.sldworks;
+using SolidWorks.Interop.swconst;
+using OdooApi;
 
-// namespace SwNestedBOMExtractor
-// {
-//     // Represents a single property
-//     public class CustomProperty
-//     {
-//         public string Name { get; set; }
-//         public string Value { get; set; }
-//         public string RawValue { get; set; }
-//         public string Scope { get; set; } // "General" or configuration name
-//     }
+namespace SolidworksAPI;
 
-//     // Represents a single part in the BOM
-//     public class PartEntry
-//     {
-//         public string FileName { get; set; }
-//         public string FilePath { get; set; }
-//         public int Quantity { get; set; }
-//         public List<CustomProperty> Properties { get; set; } = new List<CustomProperty>();
-//     }
+public class SWOdooBomImport
+{
+    public class BomNode
+    {
+        public required string Name { get; set; }
+        public int Quantity { get; set; }
+        public bool IsAssembly { get; set; }
+        public Dictionary<string, string> Properties { get; set; } = new Dictionary<string, string>();
+        public List<BomNode> Components { get; set; } = new List<BomNode>();
+    }
 
-//     // Represents the BOM for an assembly (can contain sub-assemblies)
-//     public class AssemblyBOM : PartEntry
-//     {
-//         public List<PartEntry> Parts { get; set; } = new List<PartEntry>();
-//         public List<AssemblyBOM> SubAssemblies { get; set; } = new List<AssemblyBOM>();
-//     }
+    class Program
+    {
+        private static readonly string LocalCachePath = "secrets_cache.json";
+        // Key Vault URL (replace with your vault URI) Unable to get vault for myself so commenting it out. Update this and OdooApiclient for to use it.
+        // private static readonly string KeyVaultUrl = "https://<your-key-vault-name>.vault.azure.net/";
+        private static readonly string logDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs");
+        private static readonly string logFilePath = Path.Combine(logDirectory, "SWOdooImport.log");
+        private static readonly SemaphoreSlim logLock = new SemaphoreSlim(1, 1);
 
-//     class Program
-//     {
-//         static void Main(string[] args)
-//         {
-//             try
-//             {
-//                 // Connect to SOLIDWORKS
-//                 var swApp = Activator.CreateInstance(Type.GetTypeFromProgID("SldWorks.Application")) as SldWorks;
-//                 if (swApp == null)
-//                 {
-//                     Console.WriteLine("Unable to connect to SOLIDWORKS.");
-//                     return;
-//                 }
 
-//                 swApp.Visible = true;
+        static async Task Main(string[] args)
+        {
+            try
+            {
+                // Connect to SOLIDWORKS
+                if (Activator.CreateInstance(Type.GetTypeFromProgID("SldWorks.Application")) is not SldWorks swApp)
+                {
+                    Logger.Error("Unable to connect to SOLIDWORKS.");
+                    await Logger.ShutdownAsync(); // Gracefully stop logger
+                    return;
+                }
 
-//                 // Get active document
-//                 var swModel = swApp.ActiveDoc as ModelDoc2;
-//                 if (swModel == null)
-//                 {
-//                     Console.WriteLine("No active document found.");
-//                     return;
-//                 }
-                
-//                 // Build BOM recursively
-//                 AssemblyBOM rootBOM = ProcessAssembly(swModel, new HashSet<string>(StringComparer.OrdinalIgnoreCase));
+                swApp.Visible = true;
 
-//                 // Export to JSON
-//                 string json = JsonSerializer.Serialize(rootBOM, new JsonSerializerOptions
-//                 {
-//                     WriteIndented = true
-//                 });
+                // Get active document
+                if (swApp.ActiveDoc is not ModelDoc2 swModel)
+                {
+                    Logger.Error("No active document found in Solidworks.");
+                    await Logger.ShutdownAsync(); // Gracefully stop logger
+                    return;
+                }
 
-//                 string outputPath = $"C:/Users/tanner.troumbley/PycharmProjects/Solidworks API/{Path.GetFileNameWithoutExtension(swModel.GetTitle())}.json";
-//                 File.WriteAllText(outputPath, json);
-//                 Console.WriteLine($"BOM exported to: {outputPath}");    
-//             }
-//             catch (Exception ex)
-//             {
-//                 Console.WriteLine("Error: " + ex.Message);
-//             }
-//         }
+                BomNode swBOMTree;
+                int docType = swModel.GetType();
+                if (docType == (int)swDocumentTypes_e.swDocASSEMBLY)
+                {
 
-//         /// <summary>
-//         /// Recursively processes an assembly and returns its BOM object.
-//         /// </summary>
-//         static AssemblyBOM ProcessAssembly(ModelDoc2 swModel, HashSet<string> processedParts)
-//         {
-//             var swAssembly = (AssemblyDoc)swModel;
-//             var bom = new AssemblyBOM
-//             {
-//                 FileName = Path.GetFileNameWithoutExtension(swModel.GetTitle()),
-//                 FilePath = swModel.GetPathName()
-//             };
+                    AssemblyDoc swAssembly = (AssemblyDoc)swModel;
+                    // Need to resolve Lightweight to get all the data needed.
+                    swAssembly.ResolveAllLightWeightComponents(true);
 
-//             // General properties
-//             var bomgeneralProps = swModel.Extension.get_CustomPropertyManager("");
-//             bom.Properties.AddRange(GetProperties(bomgeneralProps, "General"));
+                    Component2 rootComp = swAssembly.GetEditTargetComponent();
+                    
+                    // Build BOM recursively
+                    swBOMTree = BuildBomTree(rootComp, 1);
+                }
+                else
+                {
+                    swBOMTree = new BomNode
+                    {
+                        Name = Path.GetFileNameWithoutExtension(swModel.GetTitle()),
+                        Quantity = 1,
+                        IsAssembly = false,  
+                    };
+                    ExtractCustomProperties(swModel, swBOMTree.Properties);
 
-//             // Configuration-specific properties
-//             string[] bomconfigNames = (string[])swModel.GetConfigurationNames();
-//             if (bomconfigNames != null)
-//             {
-//                 foreach (string configName in bomconfigNames)
-//                 {
-//                     var configProps = swModel.Extension.get_CustomPropertyManager(configName);
-//                     bom.Properties.AddRange(GetProperties(configProps, configName));
-//                 }
-//             }
-//             object[] components = (object[])swAssembly.GetComponents(true);
-//             if (components == null) return bom;
+                }
 
-//             foreach (Component2 comp in components)
-//             {
-//                 if (comp == null) continue;
+                // Export to JSON
+                string json = JsonSerializer.Serialize(swBOMTree, new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
 
-//                 var compModel = comp.GetModelDoc2() as ModelDoc2;
-//                 if (compModel == null)
-//                 {
-//                     var partEntry = new PartEntry
-//                     {
-//                         FileName = comp.Name2
-//                     };
-//                     bom.Parts.Add(partEntry);
-//                     continue;
-//                 }
+                await PostOdoo(json);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+   
+        static async Task PostOdoo(string bomJson)
+        {
+            var SecureValues = new SecureCredentials(LocalCachePath);
+            string url = await SecureValues.CheckValue("Odoo_URL");
+            string dbName = await SecureValues.CheckValue("Odoo_DB");
+            string username = await SecureValues.CheckValue("Odoo_Username");
+            string password = await SecureValues.CheckValue("Odoo_Password");
 
-//                 int docType = compModel.GetType();
+            var client = new OdooApiClient(url, dbName, username, password);
+            try
+            {
+                await client.AuthenticateAsync();
+            }
+            catch
+            {
+                // Logger in OdooApi gets the authenticaton error.
+            }
 
-//                 if (docType == (int)swDocumentTypes_e.swDocPART)
-//                 {
-//                     string partPath = compModel.GetPathName();
-//                     if (string.IsNullOrEmpty(partPath))
-//                     {
-//                         // Console.WriteLine($"Part path is null for {compModel} for swDocumentTypes_e.swDocPART");
-//                         continue;
-//                     }
+            await client.ExecuteKwAsync("bom.importer", "import_bom_json", [bomJson]);
+        }
 
-//                     if (processedParts.Contains(partPath)) continue;
-//                     processedParts.Add(partPath);
+        static BomNode? BuildBomTree(Component2 comp, int quantity)
+        {
+            if (comp == null || comp.IsSuppressed()) return null;
+            if (comp.IsVirtual) return null;
 
-//                     var partEntry = new PartEntry
-//                     {
-//                         FileName = Path.GetFileNameWithoutExtension(partPath),
-//                         FilePath = partPath
-//                     };
+            string compPath = comp.GetPathName();
 
-//                     // General properties
-//                     var generalProps = compModel.Extension.get_CustomPropertyManager("");
-//                     partEntry.Properties.AddRange(GetProperties(generalProps, "General"));
+            if (string.IsNullOrEmpty(compPath)) return null;
+            bool isAssembly = comp.GetModelDoc2() is AssemblyDoc;
+           
 
-//                     // Configuration-specific properties
-//                     string[] configNames = (string[])compModel.GetConfigurationNames();
-//                     if (configNames != null)
-//                     {
-//                         foreach (string configName in configNames)
-//                         {
-//                             var configProps = compModel.Extension.get_CustomPropertyManager(configName);
-//                             partEntry.Properties.AddRange(GetProperties(configProps, configName));
-//                         }
-//                     }
-//                     // else
-//                     // {
-//                     //     Console.WriteLine($"Configname is null for {compModel}");
-//                     // }
+            BomNode node = new BomNode
+            {
+                Name = Path.GetFileNameWithoutExtension(compPath),
+                Quantity = quantity,
+                IsAssembly = isAssembly,
+            };
 
-//                     bom.Parts.Add(partEntry);
-//                 }
-//                 else if (docType == (int)swDocumentTypes_e.swDocASSEMBLY)
-//                 {
-//                     // Recursively process sub-assembly
-//                     var subBOM = ProcessAssembly(compModel, processedParts);
-//                     bom.SubAssemblies.Add(subBOM);
-//                 }
-//             }
+            ModelDoc2 model = (ModelDoc2)comp.GetModelDoc2();
+            if (model != null) ExtractCustomProperties(model, node.Properties);
 
-//             return bom;
-//         }
+            if (isAssembly)
+            {
+                Dictionary<string, (Component2 comp, int qty)> childMap = new Dictionary<string, (Component2, int)>(StringComparer.OrdinalIgnoreCase);
 
-//         /// <summary>
-//         /// Extracts properties from a CustomPropertyManager.
-//         /// </summary>
-//         static List<CustomProperty> GetProperties(CustomPropertyManager propMgr, string scope)
-//         {
-//             var props = new List<CustomProperty>();
-//             string[] propNames = (string[])propMgr.GetNames();
-//             if (propNames == null) return props;
+                object swchildren = comp.GetChildren();
 
-//             foreach (string propName in propNames)
-//             {
-//                 string valOut;
-//                 string resolvedVal;
-//                 bool wasResolved;
-//                 bool linkToProp;
+                if (swchildren is object[] children)
+                {
+                    foreach (Component2 child in children.Cast<Component2>())
+                    {
+                        if (child == null || child.IsSuppressed()) continue;
+                        string childPath = child.GetPathName();
 
-//                 propMgr.Get6(propName, false, out valOut, out resolvedVal, out wasResolved, out linkToProp);
-//                 if (valOut != resolvedVal)
-//                 {
-//                     Console.WriteLine($"valOut: {valOut}, reslovedVal: {resolvedVal}");
-//                 }
-//                 props.Add(new CustomProperty
-//                 {
-//                     Name = propName,
-//                     Value = resolvedVal,
-//                     RawValue = valOut,
-//                     Scope = scope
-//                 });
-//             }
+                        if (string.IsNullOrEmpty(childPath)) continue;
 
-//             return props;
-//         }
-//     }
-// }
+                        if (!childMap.ContainsKey(childPath))
+                            childMap[childPath] = (child, 0);
+
+                        childMap[childPath] = (child, childMap[childPath].qty + 1);
+                    }
+
+                    foreach (var kvp in childMap)
+                    {
+                        BomNode? childNode = BuildBomTree(kvp.Value.comp, kvp.Value.qty);
+                        if (childNode != null) node.Components.Add(childNode);
+                    }
+                }
+            }
+            return node;
+        }
+
+        static void ExtractCustomProperties(ModelDoc2 model, Dictionary<string, string> props)
+        {
+            try
+            { 
+                CustomPropertyManager propMgr = model.Extension.CustomPropertyManager[""]; 
+                string [] propNames = (string[]) propMgr.GetNames();
+                foreach (string key in propNames)
+                {
+                    propMgr.Get4(key, true, out string valOut, out string resolvedVal);
+
+                    if (!string.IsNullOrEmpty(valOut)) 
+                        props[key] = valOut;
+
+                    else 
+                        props[key] = resolvedVal;    
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+    }
+}

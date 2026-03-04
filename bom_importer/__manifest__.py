@@ -5,7 +5,7 @@
     'summary': "Custom Bom Import",
 
     'description': """
-    This is an example of how odoo can take the expected Json tree from the SWOdooBomExport addon.
+    This is an example of how odoo can take the expected Json tree from the SWOdooBomExport add
     """,
 
     'author': "Tanner Troumbley",
