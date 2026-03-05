@@ -112,6 +112,8 @@ public class SWOdooBomImport
             {
                 // Logger in OdooApi gets the authenticaton error.
             }
+            // Python version to run function.
+            // dev_v17.do("bom.importer", "import_bom_json", {'bom_json_str': data, "record_name": "SW Test"})
 
             await client.ExecuteKwAsync("bom.importer", "import_bom_json", [bomJson]);
         }

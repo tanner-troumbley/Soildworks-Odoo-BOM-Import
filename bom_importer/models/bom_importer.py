@@ -31,8 +31,9 @@ class BOMImporter(models.Model):
         if record_name:
             record = self.env['bom.importer'].search([('name', '=', record_name)], limit=1)
             if record:
-                # Should give a dict of swkey: odooKey
-                property_field_map = {record.line_ids.field_id.mapped('name') : record.line_ids.mapped('name')}
+                # Gives a dict of swkey: odooKey
+                for line in record.line_ids:
+                    property_field_map |= {line.name: line.field_id.name}
 
         Product = self.env['product.product']
 
