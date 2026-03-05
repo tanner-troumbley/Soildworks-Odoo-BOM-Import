@@ -2,11 +2,11 @@ from odoo import models, api, fields
 import json
 
 class BOMImporterLine(models.Model):
-    _name="bom.impoter.line"
-    _description="BOm Impoter Mapping"            
+    _name="bom.importer.line"
+    _description="BOM Impoter Mapping"            
 
     name = fields.Text(string='Original Field', copy=False, store=True, required=True)
-    field_id = fields.Many2one('ir.model.fields', domian='[("model_id", "ilike", "product.product")]', string='Odoo Field', copy=False, store=True, required=True)
+    field_id = fields.Many2one('ir.model.fields', domian='[("model_id", "ilike", "product.product")]', string='Odoo Field', copy=False, store=True, required=True, ondelete='cascade')
     bom_importer_id = fields.Many2one('bom.importer', ondelete="cascade", required=True)
     
 class BOMImporter(models.Model):
@@ -21,15 +21,18 @@ class BOMImporter(models.Model):
         ]
     
     name = fields.Text(string='Name', copy=False, store=True, required=True)
-    line_ids = fields.One2many("bom.impoter.line", "bom_importer_id")
+    line_ids = fields.One2many("bom.importer.line", "bom_importer_id")
     
     @api.model
-    def import_bom_json(self, bom_json_str):
-        """Import entire BOM in one transaction with field validation and reporting"""
+    def import_bom_json(self, bom_json_str, record_name=None):
+        """Import entire BOM in one transaction with field mapping and reporting"""
         bom_data = json.loads(bom_json_str)
-        if self.line_ids:
-            # Should give a dict of swkey: odooKey
-            property_field_map = {self.line_ids.field_id.mapped('name') : self.line_ids.mapped('name')}
+        property_field_map = {}
+        if record_name:
+            record = self.env['bom.importer'].search([('name', '=', record_name)], limit=1)
+            if record:
+                # Should give a dict of swkey: odooKey
+                property_field_map = {record.line_ids.field_id.mapped('name') : record.line_ids.mapped('name')}
 
         Product = self.env['product.product']
 
@@ -41,6 +44,7 @@ class BOMImporter(models.Model):
         }
 
         def get_or_create_product(swproduct):
+            """Gets or Creats Odoo Product while mapping the fields set with bom.importer.lines if a record_name is providied."""
             # This is useful if the Data from the Json is mapped without transformation.
             vals = {}
             for swKey, odooKey in property_field_map.items():
@@ -56,7 +60,10 @@ class BOMImporter(models.Model):
                     product.write(vals)
                     report["products_updated"].append(swproduct['Name'])
             else:
-                vals['name'] = swproduct["Properties"]['Description']
+                # Can create a bom.importer.line that ties Description to prdocut name or hardcode it.
+                # vals['name'] = swproduct["Properties"]['Description']
+                
+                # This needs to be hardcoded as we only mapp properties not things outside of it.
                 vals['default_code'] = swproduct['Name']
                 vals['type'] = 'product'
                 product = Product.create(vals)
@@ -72,6 +79,8 @@ class BOMImporter(models.Model):
                     'product_id': part_product.id,
                     'product_qty': part['Quantity']
                 }))
+                if part['IsAssembly']:
+                    process_assembly(part)
             if bom_lines:
                 bom = self.env['mrp.bom'].create({
                     'product_tmpl_id': assembly_product.product_tmpl_id.id,
@@ -80,8 +89,6 @@ class BOMImporter(models.Model):
                     'bom_line_ids': bom_lines
                 })
                 report["boms_created"].append((assembly, bom))
-            if assembly['IsAssembly']:
-                process_assembly(assembly)
 
         process_assembly(bom_data)
         return report

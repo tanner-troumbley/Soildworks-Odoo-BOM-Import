@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SWOdooBomImport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1745bcefea569c7737acfc8d769954b3a9994bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a1230720bafc84c71e3d2f8998f56a5e9954f99")]
 [assembly: System.Reflection.AssemblyProductAttribute("SWOdooBomImport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SWOdooBomImport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
