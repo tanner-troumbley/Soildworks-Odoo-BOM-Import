@@ -23,7 +23,6 @@
                     </h1>
                   </div>                   
                   <group>
-                    <field name="fields_id_domain" widget="domain" options="{'model', 'ir.model.fields'}"/>
                     <field name="line_ids"/>
                   </group>
                 </sheet>
